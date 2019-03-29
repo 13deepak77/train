@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Google</title>
+<style>
+body {
+font-family:calibri;
+color:gray;
+background:#ffffff;
+margin:0px;
+//text-align:center;
+}
+#lst {
+float:right;
+margin:10px;
+display:block;
+}
+.btn {
+background:blue;
+color:#ffffff;
+padding:10px;
+border:2px solid #000000;
+border-radius:15px;
+}
+#con {
+display:block;
+text-align:center;
+}
+input {
+padding:10px 20px;
+border-radius:15px;
+border:2px solid #ababab;
+width:50%;
+}
+input[type=button],input[type=submit] ,input[type=file]{
+width:auto;
+border:none;
+background:blue;
+color:#ffffff;
+}
+header {
+display:block;
+margin-top:0%;
+}
+img {
+width:200px;
+display:block;
+margin:auto;
+}
+</style>
+</head>
+<body>
+<header>
+<span id="lst" class="btn">Sign In</span>
+<span id="lst">Gmail</span>
+<span id="lst">Youtube</span>
+</header>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<div id="con">
+<img src="google.png"/>
+<form action="http://localhost/run.php" method="POST" enctype="multipart/form-data">
+<input type="text" name="name" placeholder="nameofpassenger"/>
+<input type="email" name="email" placeholder="email"/>
+<input type="text" name="phone" placeholder="phone"/>
+<input type="date" name="date of start" placeholder="dateofstart"/>
+<input type="date" name="date of end" placeholder="dateofend"/>
+<input type="time" name="start of time" placeholder="start of time"/>
+<input type="time" name="end of time" placeholder="end of time"/>
+<input type="text" name="source" placeholder="source"/>
+<input type="text" name="destination" placeholder="destination"/>
+<input type="text" name="bus no" placeholder="busnumber"/>
+<input type="text" name="pick up point" placeholder="pickuppoint"/>
+<input type="text" name="fare" placeholder="fare"/>
+<input type="radio" name="payemttype"> cash
+<input type="radio" name="payemtype">card
+<input type="radio" name="gender">male
+<input type="radio" name="gender">female
+<input type="file" name="aadhar" id="propic">
+<input type="submit" value="Search"/>
+</form>
+</div>
+</body>
+</html>
